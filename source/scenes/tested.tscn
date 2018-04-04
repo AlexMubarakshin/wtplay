@@ -1,0 +1,64 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://source/scenes/actors/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://source/resources/tilesets/base.tres" type="TileSet" id=2]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Player" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 1008.04, 558.373 )
+
+[node name="Camera2D" type="Camera2D" parent="Player" index="2"]
+
+position = Vector2( 0.0748291, -28.382 )
+anchor_mode = 1
+rotating = false
+current = true
+zoom = Vector2( 1, 1 )
+limit_left = -10000000
+limit_top = -10000000
+limit_right = 10000000
+limit_bottom = 10000000
+limit_smoothed = false
+drag_margin_h_enabled = true
+drag_margin_v_enabled = true
+smoothing_enabled = true
+smoothing_speed = 5.0
+offset_v = 0.0
+offset_h = 0.0
+drag_margin_left = 0.2
+drag_margin_top = 0.2
+drag_margin_right = 0.2
+drag_margin_bottom = 0.2
+editor_draw_screen = true
+editor_draw_limits = false
+editor_draw_drag_margin = false
+_sections_unfolded = [ "Smoothing" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="TileMap" type="TileMap" parent="." index="1"]
+
+position = Vector2( 138.214, 94.833 )
+mode = 0
+tile_set = ExtResource( 2 )
+cell_size = Vector2( 64, 64 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 36, 0, 131072, 65559, 0, 131076, 65560, 0, 131075, 65561, 0, 131075, 65562, 0, 131075, 65563, 0, 131075, 65564, 0, 262148, 65572, 0, 131073, 131094, 0, 131078, 131100, 0, 131073, 131108, 0, 131073, 196617, 0, 131076, 196618, 0, 262148, 196629, 0, 131078, 196636, 0, 131073, 196644, 0, 131073, 262150, 0, 1, 262151, 0, 327681, 262152, 0, 131077, 262154, 0, 262150, 262155, 0, 131077, 262164, 0, 131078, 262172, 0, 131074, 262180, 0, 131073, 327686, 0, 4, 327687, 0, 6, 327699, 0, 131072, 327716, 0, 131073, 393222, 0, 4, 393223, 0, 6, 393234, 0, 1, 393235, 0, 327684, 393252, 0, 131073, 458758, 0, 4, 458759, 0, 65540, 458760, 0, 3, 458762, 0, 1, 458763, 0, 3, 458769, 0, 1, 458770, 0, 393217, 458771, 0, 65538, 458788, 0, 131073, 524294, 0, 65536, 524295, 0, 65542, 524296, 0, 65540, 524297, 0, 2, 524298, 0, 65541, 524299, 0, 65540, 524300, 0, 327681, 524301, 0, 131075, 524302, 0, 262147, 524303, 0, 131075, 524304, 0, 327682, 524305, 0, 65541, 524306, 0, 6, 524319, 0, 131076, 524320, 0, 131075, 524321, 0, 131075, 524322, 0, 131075, 524323, 0, 262147, 524324, 0, 327680, 589831, 0, 65536, 589832, 0, 65537, 589833, 0, 65542, 589834, 0, 5, 589835, 0, 5, 589836, 0, 6, 589838, 0, 131074, 589840, 0, 65536, 589841, 0, 65542, 589842, 0, 262146, 589843, 0, 131077, 589854, 0, 131078, 589859, 0, 131074, 655369, 0, 65536, 655370, 0, 65537, 655371, 0, 65542, 655372, 0, 6, 655377, 0, 65536, 655378, 0, 65538, 655389, 0, 131078, 720907, 0, 65536, 720908, 0, 65538, 720923, 0, 262149, 720924, 0, 131077, 786448, 0, 131076, 786449, 0, 131075, 786450, 0, 131075, 786451, 0, 131075, 786452, 0, 131075, 786453, 0, 131075, 786454, 0, 131075, 786455, 0, 131075, 786456, 0, 131075, 786457, 0, 131075, 786458, 0, 131075, 786459, 0, 327680, 851982, 0, 262149, 851983, 0, 131077, 917513, 0, 131076, 917514, 0, 131075, 917515, 0, 131075, 917516, 0, 131075, 917517, 0, 131075, 917518, 0, 327685 )
+_sections_unfolded = [ "Cell", "Collision", "Occluder" ]
+
+
