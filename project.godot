@@ -23,5 +23,6 @@ ui_focus_next=[ Object(InputEventKey,"resource_local_to_scene":false,"resource_n
 
 [rendering]
 
+quality/2d/use_pixel_snap=true
 environment/default_clear_color=Color( 0.172549, 0.254902, 0.498039, 1 )
 environment/default_environment="res://default_env.tres"
